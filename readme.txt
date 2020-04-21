@@ -1,4 +1,4 @@
-The script launch new VPC with Docker & Kubernetes baked node-cluster
+The script launches new VPC with Docker & Kubernetes baked node-cluster
 
 1) You can specify how many nodes are needed in EC2 section of node_cluster_vpc.sh
 2) Try to check up AMI of the EC2 image. Amazon sometimes changes it. If it does you can put new image id in EC2 section of node_cluster_vpc.sh

@@ -1,7 +1,7 @@
-The script launches new VPC with Docker & Kubernetes baked node-cluster
+The script creates a new VPC, K8s node-group cluster with Docker run-time and Flannel network add-on
 
-1) You can specify how many nodes are needed in EC2 section of node_cluster_vpc.sh
-2) Try to check up AMI of the EC2 image. Amazon sometimes changes it. If it does you can put new image id in EC2 section of node_cluster_vpc.sh
-3) Everything should work but launching Flannel network (it does not work on user data section. Don't have any idea of the issue). SSH master node and under root user home directory run flannel.sh manually. After that, the cluster will be ready to use. Have a nice adventure!
+1) How many nodes are needed can be specified in EC2 section of node_cluster_vpc.sh
+2) Make sure that AMI of the EC2 image exists. Amazon often changes AMI ID. If it does you can put new image id in EC2 section of node_cluster_vpc.sh
+3) Everything should work but launching Flannel network (the network script does not work from "user data" section. Don't have any idea of the issue). SSH master node and under root user run flannel.sh manually. After that, the cluster will be ready to use. Have a nice adventure!
 
-NOTE: After work done recommend you to terminate EC2s and delete VPC as well. It might be cost-effective. And when you need it again - just run the script
+NOTE: Terminate all of EC2s first and delete VPC after as well when work gets done. It will safe money and keep cost-efficiency. Need it again - just run the script
